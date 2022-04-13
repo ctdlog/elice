@@ -6,20 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .box {
-        width: 500px;
-        height: 500px;
-        background-color: blue;
+      ul {
+        display: flex;
+        justify-content: space-around;
       }
+
+      .bar {
+        display: none;
+        width: 20px;
+        border: 2px solid black;
+        margin: 5px;
+      }
+
       @media (max-width: 700px) {
-        .box {
-          border: 5px solid black;
+        .bar {
+          display: block;
         }
       }
     </style>
   </head>
   <body>
     <h1>미디어쿼리 실습 공간입니다</h1>
-    <div class="box"></div>
+    <ul>
+      <li>Home</li>
+      <li>Second Page</li>
+      <li>Third Page</li>
+      <li>Fourth Page</li>
+    </ul>
+    <div class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
   </body>
 </html>
