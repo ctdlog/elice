@@ -10,7 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
   </head>
   <body>
     <header>
@@ -26,12 +27,16 @@
     <main>
       <h1 id="title">이력서</h1>
       <h2 id="name">최우식</h2>
-      <div class="profile" onclick="showProfileModal">
-        <img src="profile.jpeg" alt="프로필 사진" />
+      <div class="profile">
+        <img
+          src="profile.jpeg"
+          alt="프로필 사진"
+          onclick="showProfileModal()"
+        />
       </div>
-      <div class="profileModal" onclick="hideProfileModal">
+      <!-- <div class="profileModal" onclick="hideProfileModal">
         <img src="profile.jpeg" alt="프로필 사진" />
-      </div>
+      </div> -->
 
       <div class="sub-container">
         <div class="sub-item">
@@ -83,14 +88,4 @@
       </p>
     </footer>
   </body>
-  <script src="main.js"></script>
-  <script>
-    function showProfileModal() {
-      document.querySelector(".profileModal").style.display = "grid";
-    }
-
-    function hideProfileModal() {
-      document.querySelector(".profileModal").style.display = "none";
-    }
-  </script>
 </html>
