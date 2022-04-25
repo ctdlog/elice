@@ -1,0 +1,25 @@
+#ex1 {
+  border: 1px solid black;
+  transition: border 1s linear, transform 1s linear;
+  transform: translate(0, 0);
+}
+
+#ex1:hover {
+  border: 5px solid black;
+  transform: translate(100px, 0);
+}
+
+#ex2 {
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  transition: all 3s ease-in-out;
+}
+
+#ex2:hover {
+  width: 250px;
+  height: 250px;
+  transform: rotate(180deg);
+  background-color: blue;
+}

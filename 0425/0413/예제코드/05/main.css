@@ -1,0 +1,23 @@
+#ex1 {
+  border: 1px solid black;
+  float: right;
+}
+
+#ex2 {
+  border: 1px solid red;
+  float: right;
+}
+
+#ex3 {
+  border: 1px solid blue;
+  float: left;
+}
+
+#ex4 {
+  border: 1px solid yellow;
+  clear: both;
+}
+
+#ex5 {
+  border: 1px solid purple;
+}

@@ -1,0 +1,16 @@
+span {
+  padding: 8px;
+}
+
+#ex1 > span {
+  border: 1px solid blue;
+}
+
+#ex2 { 
+	border: 1px solid black; 
+}
+
+#ex2:hover { 
+	border: 5px solid black;
+  background-color: red;
+}

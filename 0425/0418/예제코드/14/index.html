@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>example</title>
+  </head>
+  <body>
+    <input
+      type="button"
+      onclick="alert('ex1');"
+      oncontextmenu="alert('ex1-오른쪽');"
+      value="버튼1"
+    />
+    <select onchange="alert(this.value);">
+      <option value="-">선택2</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <input type="button" onmouseover="alert('ex3');" value="버튼3" />
+    <input type="text" onkeydown="alert(this.value)" />
+    <input type="text" onfocus="alert('ex4')" />
+  </body>
+</html>

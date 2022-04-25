@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 20px 0;
+    width: 80px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 32px;
+}
+
+#title {
+    display: none;
+}
+
+#name {
+    font-size: 80px;
+    font-family: 'Black Han Sans', sans-serif;
+    margin: 20px 0;
+}
+
+.sub-container {
+    display: flex;
+}
+
+.sub-item {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.sub-title {
+    font-weight: 100;
+    font-size: 32px;
+    font-family: 'Black Han Sans', sans-serif;
+    margin: 30px 0 10px 0;
+}
+
+footer {
+    padding: 40px;
+    background-color: #EFEFEF;
+}

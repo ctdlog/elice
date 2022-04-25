@@ -1,0 +1,46 @@
+#ex1 {
+  animation-name: exAnimation1;
+	animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#ex2 {
+  margin-top: 50px;
+
+  /* width: 200px;
+  height: 200px;
+  background-color: red; */
+
+  animation-name: exAnimation2;
+	animation-duration: 1s;
+  animation-timing-function: ease-in;
+  /* animation-delay: 1s; */
+  animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes exAnimation1 {
+  from {
+    border: 1px solid black;
+    transform: translate(0, 0);
+  }
+  to {
+    border: 5px solid black;
+    transform: translate(100px, 0);
+  }
+}
+
+@keyframes exAnimation2 {
+  from {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+  to {
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+  }
+}

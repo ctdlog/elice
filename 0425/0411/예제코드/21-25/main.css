@@ -1,0 +1,39 @@
+html {
+	font-size: 24px;
+}
+
+#ex1 {
+	font-size: 1rem;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+#ex2 {
+	font-size: 1.5rem;
+	font-family: Arial, sans-serif;
+	font-style: italic;
+	font-weight: 400;
+}
+
+#ex3 {
+	font-size: 2rem;
+	font-family: 'Courier New', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+#ex4 {
+	border-style: dashed;
+	border-color: blue;
+	border-width: 5px;
+	padding: 30px;
+	margin-top: 30px;
+}
+
+#ex5 {
+	height: 100px;
+	background-image: url("img_story_renewal.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}

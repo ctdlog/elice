@@ -1,0 +1,19 @@
+#ex1 {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+#ex2 {
+  border: 1px solid red;
+  margin-top: 30px;
+}
+
+#ex3 {
+  border: 1px solid black;
+  background-color: lavender;
+}
+
+#ex4 {
+  background-color: yellow;
+  margin-top: 30px;
+}

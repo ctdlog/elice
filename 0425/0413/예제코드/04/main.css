@@ -1,0 +1,25 @@
+#ex1 {
+  border: 1px solid black;
+  display: inline;
+  width: 100px;
+}
+
+#ex2 {
+  border: 1px solid red;
+  display: inline-block;
+  width: 100px;
+}
+
+#ex3 {
+  border: 1px solid blue;
+  display: none;
+}
+
+#ex4 {
+  border: 1px solid yellow;
+  visibility: hidden;
+}
+
+input[name="check"] {
+  background-color: red;
+}

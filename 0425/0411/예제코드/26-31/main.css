@@ -1,0 +1,27 @@
+body div {
+	color: blue;
+}
+
+.ex1 {
+	color: brown;
+}
+
+body div.ex2 {
+	color: red;
+}
+
+div span {
+	color: green;
+}
+
+#id {
+	color: green;
+}
+
+.class {
+	color: brown;
+}
+
+div.class {
+	color: red !important;
+}
