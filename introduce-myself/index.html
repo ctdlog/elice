@@ -4,59 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduce Myself</title>
+    <title>Document</title>
     <link rel="icon" type="image/png" href="imgs/favicon.png" />
     <script
       src="https://kit.fontawesome.com/064e160ca4.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans:wght@400;600&family=Water+Brush&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
   </head>
-
   <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="navbar__logo">Introduce Logo</div>
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item">Home</li>
-        <li class="navbar__menu__item">About</li>
-        <li class="navbar__menu__item">Elice</li>
-        <li class="navbar__menu__item">Hobby</li>
-      </ul>
-    </nav>
-
-    <!-- Home -->
-    <section class="home">
-      <div>
-        <img src="profile.jpeg" alt="profile" class="home__avatar" />
-        <h1 class="home__title">안녕하세요!</h1>
-        <h2 class="home__description">
-          저는 최형욱입니다. <br />
-          Front-End 개발자가 되고 싶습니다!
-        </h2>
-      </div>
+    <section class="scene one" id="home">
+      <nav class="menu">
+        <ul>
+          <li><a data-link="#home">Home</a></li>
+          <li><a data-link="#about">About me</a></li>
+          <li><a data-link="#elice">To Elice</a></li>
+        </ul>
+      </nav>
+      <header>
+        <img class="profile" src="profile.jpeg" width="300px;" height="300px" />
+        <h1 class="profile__description">Hello, I'm Hyung Wook!</h1>
+        <!-- 열정 많은 예비 FE 개발자입니다! -->
+      </header>
     </section>
-
-    <!-- About -->
-    <section class="section about">
-      <h1>About me</h1>
-      <p>
-        제 포트폴리오 사이트에 방문해주셔서 감사합니다! 🙋‍♂️ <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, magni
-        veniam aperiam quo porro ullam neque nemo ea sed labore quaerat maxime
-        facilis vitae eius. Ea reiciendis ab maiores maxime.
-      </p>
-      <div>
-        <div class="teck__title">
-          <h2>Tech stack</h2>
-        </div>
+    <section class="scene two" id="about">
+      <header>
+        <h1 class="tecks__description">Techs that I'm interested!</h1>
         <div class="about__tecks">
           <div class="teck">
             <div class="teck__icon">
@@ -77,41 +56,20 @@
             <h3 class="teck__title">React</h3>
           </div>
         </div>
-      </div>
+        <h2>
+          이외에도 여러 기술에 관심이 많고 새로운 기술을 프로젝트에 적용하는걸
+          좋아합니다!
+        </h2>
+      </header>
     </section>
-
-    <!-- Elice -->
-    <section class="section elice">
-      <div class="elice__title">
-        <h1>Elice</h1>
-      </div>
-      <div class="elice__description">
-        <h2>SW 트랙에서 가장 기대되는 점</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-          veniam quis, ipsa voluptatibus suscipit enim asperiores similique
-          blanditiis reiciendis accusamus debitis, aspernatur optio atque in.
-          Dolore odit impedit nisi est?
-        </p>
-      </div class="elice__description">
-      <div>
-        <h2>동료 레이서에게 하고 싶은 말</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptas
-          et incidunt corporis soluta dolores. Quaerat deleniti quisquam optio,
-          nam a ad tempore modi itaque obcaecati ut hic consequuntur possimus?
-        </p>
-      </div>
-    </section>
-
-    <!-- Hobby -->
-    <section class="section hobby">
-      <div>
-        <h3>
-          취미, 특기, 좋아하는 음료, 최근에 본 영화 또는 책 등 나를 표현할 수
-          있는 정보
-        </h3>
-      </div>
+    <section class="scene three" id="elice">
+      <header>
+        <h1>To Elice</h1>
+        열심히 하시는 동료 레이서분들과 열정 넘치시는 코치님들을 만나 좋은
+        영향을 많이 받고 있습니다. <br />
+        최대한 많이 배워서 원하는 목표를 이루고자 합니다!
+      </header>
     </section>
   </body>
+  <script src="main.js"></script>
 </html>
