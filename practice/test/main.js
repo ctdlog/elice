@@ -1,3 +1,16 @@
-fetch("http://1.236.158.226:3001/mypage/test2/posts").then(() =>
-  console.log("성공")
-);
+fetch("https://elice-server.herokuapp.com/auth/login", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    id: "id1@gmail.com",
+    title: "asdas",
+    content: "asddads",
+    nickname: "asddsa",
+  }),
+})
+  .then((response) => response.json())
+  .then((result) => {
+    console.log("결과: ", result);
+  });
