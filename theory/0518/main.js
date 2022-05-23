@@ -19,6 +19,28 @@ mongoose.connect(
   }
 );
 
+app.set("view engine", "pug");
+
+app.get("/", (req, res) => {
+  posts = [
+    {
+      post_id: 2,
+      title: "Hello, world",
+      writer: "레오",
+      createdAt: "2022-05-23",
+      hit: 5,
+    },
+    {
+      post_id: 1,
+      title: "안녕하세요",
+      writer: "수니",
+      createdAt: "2022-05-23",
+      hit: 4,
+    },
+  ];
+  res.render("ex1", { title: "Hello", posts });
+});
+
 // Define Schemes
 const userSchema = new mongoose.Schema({
   name: { type: String, required: true },

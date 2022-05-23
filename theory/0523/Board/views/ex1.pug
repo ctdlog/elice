@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  div.container
+    table.table.table-striped
+      thead
+        tr
+          th(scope="col")
+          th(scope="col")= "제목"
+          th(scope="col") 작성자
+          th(scope="col") 작성일
+          th(scope="col") 조회수
+      tbody        
+          each row in posts
+            tr
+              td= row.post_id
+              td(a href=`/posts/${row.post_id}`)= row.title
+              td= row.writer
+              td= row.createdAt
+              td= row.hit
+            
+                      
