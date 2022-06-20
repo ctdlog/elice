@@ -1,0 +1,40 @@
+@mixin middleAlign {
+  vertical-align: middle;
+}
+
+$diableColor: #b2b2b2;
+
+.item {
+  padding: 4px 0;
+
+  .check {
+    @include middleAlign();
+    width: 20px;
+    height: 20px;
+  }
+
+  .label {
+    @include middleAlign();
+    margin: 0 16px;
+  }
+
+  &.checked {
+    .label {
+      color: $diableColor;
+    }
+  }
+
+  .delete_btn {
+    @include middleAlign();
+    color: red;
+    margin-left: 8px;
+    cursor: pointer;
+    visibility: hidden;
+  }
+
+  &:hover {
+    .delete_btn {
+      visibility: visible;
+    }
+  }
+}
