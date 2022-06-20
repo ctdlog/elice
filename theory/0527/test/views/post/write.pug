@@ -1,0 +1,63 @@
+extends ../layout
+
+block content
+  div.container.mt-4
+    form
+        label.form-label(for="title")= "제목"
+        input#title.form-control(type="text" placeholder="제목" value=`${post.title}`)
+
+        label.form-label(for="writer")= "작성자"
+        input#writer.form-control(type="text" placeholder="작성자" value=`${post.writer}`)
+
+        label.form-label(for="content")= "본문"
+        textarea#content.form-control(type="text" placeholder="본문" rows=6)= post.content
+
+    button.btn.btn-secondary.float-end(type="button" onclick="location.href = '/posts'")= "목록"
+    button.btn.btn-primary.float-end(type="button" onclick=(post.post_id == "0") ? "writePost()" : `updatePost(${post.post_id})`)= post.post_id == "0" ? "등록" : "수정"
+
+  script.
+    async function writePost() {
+      const data = {
+        title: document.getElementById("title").value,
+        content: document.getElementById("content").value,
+        writer: document.getElementById("writer").value,
+      };
+      
+      const res = await fetch("/api/posts", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+        body: JSON.stringify(data),
+      });
+      
+      const result = await res.json();
+      if (result.message == "OK") {
+        location.href = "/posts";
+      } else {
+        alert(result.message);
+      }
+    }
+
+    async function updatePost(post_id) {
+      const data = {
+        title: document.getElementById("title").value,
+        content: document.getElementById("content").value,
+        writer: document.getElementById("writer").value,
+      };
+      
+      const res = await fetch(`/api/posts/${post_id}`, {
+        method: "PUT",
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+        body: JSON.stringify(data),
+      });
+      
+      const result = await res.json();
+      if (result.message == "OK") {
+        location.href = `/posts/${post_id}`;
+      } else {
+        alert(result.message);
+      }
+    }
